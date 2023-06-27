@@ -1,6 +1,6 @@
 import vscode = require("vscode");
 
-export function handler(editor: vscode.TextEditor, edit: vscode.TextEditorEdit) {
+export function handler(editor: vscode.TextEditor) {
   const { document } = editor;
 
   function getFileInfo() {
@@ -26,8 +26,7 @@ export function handler(editor: vscode.TextEditor, edit: vscode.TextEditorEdit) 
         edit.replace(new vscode.Range(new vscode.Position(startLine, 0), new vscode.Position(endLine, selection.end.character)), document
           .getText()
           .replace(/\/\*(?<=\/\*)[^\/\*]{0,}?(?=\*\/)\*\//g, "")
-        // .replace(/\/\*(.*[^\/\*]\s?\n+)+(.*\*\/)$/gm, "")
-          .replace(/(?<=.*".*".*)\s*\/\/\s+.*|\s*(?<!".*)\/\/\s+.*/g, "")
+          .replace(/(?<=.*".*".*)\s*\/\/\s*.*|\s*(?<!".*)\/\/\s*.*/g, "")
           .replace(/(?<!(('|"|`).*))\/\*(.*)\*\//g, "")
           .replace(/\/\*(\s*\n.*[^\/\*])+(\*\/)$/gm, "")
           .replace(/(\/\*\*|\/\*)(\s*|.*\n\s*\*.*)*(\/)$/gm, ""));
