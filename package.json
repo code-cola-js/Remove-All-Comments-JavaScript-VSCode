@@ -6,6 +6,7 @@
   "engines": {
     "vscode": "^1.79.0"
   },
+  "icon": "assets/images/logo.png",
   "categories": [
     "Other"
   ],
@@ -48,6 +49,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/codeCola-c/Remove-All-Comments-JavaScript-VSCode"
+    "url": "https://github.com/codeCola-c/Remove-All-Comments-JavaScript-VSCode.git"
   }
 }
