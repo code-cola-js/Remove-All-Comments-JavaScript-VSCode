@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "remove-all-comments-jsorts" extension will be documented in this file.
+All notable changes to the "Remove All Comments JavaScript" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.1] - 2023-06-27
 
-## [Unreleased]
+### Added
 
-- Initial release
+Published to vscode extension market.
