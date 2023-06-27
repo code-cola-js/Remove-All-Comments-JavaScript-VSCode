@@ -2,6 +2,7 @@
   "name": "remove-all-comments-javascript",
   "displayName": "Remove All Comments Javascript",
   "description": "Remove all comments in JavaScript or TypeScript",
+  "publisher": "sz",
   "version": "1.0.1",
   "engines": {
     "vscode": "^1.79.0"
