@@ -1,7 +1,7 @@
 {
-  "name": "remove-all-comments-jsorts",
-  "displayName": "remove-all-comments-jsOrTs",
-  "description": "remove",
+  "name": "remove-all-comments-javascript",
+  "displayName": "Remove All Comments Javascript",
+  "description": "Remove all comments in JavaScript or TypeScript",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.79.0"
@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "remove-all-comments-jsorts.helloWorld",
-        "title": "Hello World"
+        "command": "remove-all-comments-javascript.removeAllComments",
+        "title": "Remove All Comments"
       }
     ]
   },
